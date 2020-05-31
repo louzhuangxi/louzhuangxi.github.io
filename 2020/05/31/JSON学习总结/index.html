@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSON学习总结 | Hexo</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="JSON学习总结 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+</div>
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>John Doe</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="All">All<small>(1)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">About</a><a style="width: 50%"  class="friends">Friends</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="1">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All "
+           href="/2020/05/31/JSON%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JSON学习总结">JSON学习总结</span>
+            <span class="post-date" title="2020-05-31 22:42:45">2020/05/31</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-JSON学习总结" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">JSON学习总结</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2020-05-31 22:42:38'>2020-05-31 22:42</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JSON学习总结"><span class="toc-text">JSON学习总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是JSON？"><span class="toc-text">一、什么是JSON？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、JSON的数据结构"><span class="toc-text">二、JSON的数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-对象"><span class="toc-text">2.1 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-数组"><span class="toc-text">2.2 数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、JAVA后端解析JSON"><span class="toc-text">三、JAVA后端解析JSON</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Fastjson的使用"><span class="toc-text">3.1 Fastjson的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-序列化"><span class="toc-text">3.1.1 序列化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-反序列化"><span class="toc-text">3.1.2 反序列化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-JSON的子类"><span class="toc-text">3.1.3 JSON的子类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-4-自己封装的JSON工具类"><span class="toc-text">3.1.4 自己封装的JSON工具类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、前端解析JSON"><span class="toc-text">四、前端解析JSON</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JSON学习总结"><a href="#JSON学习总结" class="headerlink" title="JSON学习总结"></a>JSON学习总结</h1><p>@<div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JSON学习总结"><span class="toc-text">JSON学习总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是JSON？"><span class="toc-text">一、什么是JSON？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、JSON的数据结构"><span class="toc-text">二、JSON的数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-对象"><span class="toc-text">2.1 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-数组"><span class="toc-text">2.2 数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、JAVA后端解析JSON"><span class="toc-text">三、JAVA后端解析JSON</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Fastjson的使用"><span class="toc-text">3.1 Fastjson的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-序列化"><span class="toc-text">3.1.1 序列化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-反序列化"><span class="toc-text">3.1.2 反序列化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-JSON的子类"><span class="toc-text">3.1.3 JSON的子类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-4-自己封装的JSON工具类"><span class="toc-text">3.1.4 自己封装的JSON工具类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、前端解析JSON"><span class="toc-text">四、前端解析JSON</span></a></li></ol></li></ol></div></p>
+<h2 id="一、什么是JSON？"><a href="#一、什么是JSON？" class="headerlink" title="一、什么是JSON？"></a>一、什么是JSON？</h2><pre><code>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。易于人阅读和编写。同时也易于机器解析和生成。</code></pre><h2 id="二、JSON的数据结构"><a href="#二、JSON的数据结构" class="headerlink" title="二、JSON的数据结构"></a>二、JSON的数据结构</h2><h3 id="2-1-对象"><a href="#2-1-对象" class="headerlink" title="2.1 对象"></a>2.1 对象</h3><pre><code>对象是键值对的无序集合，以&quot;{&quot;开始，同时以&quot;}&quot;结束，键值对之间以&quot;:&quot;相隔，不同的键值对之间以&quot;,&quot;相隔。</code></pre><p><img src="https://img-blog.csdnimg.cn/20200303161103677.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDY5MzAy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-2-数组"><a href="#2-2-数组" class="headerlink" title="2.2 数组"></a>2.2 数组</h3><pre><code>数组是值（value）的有序集合。一个数组以“[”（左中括号）开始，“]”（右中括号）结束。值之间使用“,”（逗号）分隔；值（value）可以是双引号括起来的字符串（string）、数值(number)、true、false、 null、对象（object）或者数组（array）。这些结构可以嵌套。</code></pre><p><img src="https://img-blog.csdnimg.cn/20200303161126393.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDY5MzAy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200303161146279.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDY5MzAy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="三、JAVA后端解析JSON"><a href="#三、JAVA后端解析JSON" class="headerlink" title="三、JAVA后端解析JSON"></a>三、JAVA后端解析JSON</h2><h3 id="3-1-Fastjson的使用"><a href="#3-1-Fastjson的使用" class="headerlink" title="3.1 Fastjson的使用"></a>3.1 Fastjson的使用</h3><h4 id="3-1-1-序列化"><a href="#3-1-1-序列化" class="headerlink" title="3.1.1 序列化"></a>3.1.1 序列化</h4><pre><code>将javaBean对象转换为JSON字符串(也就是在前后端交互中要返回给前端人员的值)</code></pre><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将List&lt;Map&lt;String,Object&gt;&gt;转化为[&#123;&#125;,&#123;&#125;,&#123;&#125;]类型的JSON字符串</span></span><br><span class="line">String json = JSON.toJSONString(mapList);</span><br><span class="line"><span class="comment">//Map&lt;String,Object&gt;转化为&#123;&#125;类型的JSON字符串</span></span><br><span class="line">String json = JSON.toJSONString(map);</span><br><span class="line"><span class="comment">//指定日期格式输出JSON字符串</span></span><br><span class="line">String userJson = JSON.toJSONStringWithDateFormat(userList,<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);</span><br><span class="line"><span class="comment">//指定日期格式并格式化转换</span></span><br><span class="line">String userJson = JSON.toJSONStringWithDateFormat(userList,<span class="string">"yyyy-MM-dd HH:mm:ss"</span>,SerializerFeature.PrettyFormat);</span><br></pre></td></tr></table></figure>
+<h4 id="3-1-2-反序列化"><a href="#3-1-2-反序列化" class="headerlink" title="3.1.2 反序列化"></a>3.1.2 反序列化</h4><pre><code>将JSON字符串转换为javaBean对象(也就是前端人员传过来需要我们解析并封装成javaBean的值)</code></pre><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将userJson转换为User对象</span></span><br><span class="line">User user1 = JSON.parseObject(userJson,User.classs);</span><br><span class="line"><span class="comment">//将[&#123;&#125;,&#123;&#125;]类型的字符串转换为集合</span></span><br><span class="line">List&lt;User&gt; users = JSON.parseArray(userListJson, User.class);</span><br><span class="line"><span class="comment">//多态</span></span><br><span class="line">JSONArray <span class="built_in">array</span> = JSON.parseArray(userListJson);</span><br><span class="line">JSONObject object =JSON.parseObject(userJson);</span><br></pre></td></tr></table></figure>
+<h4 id="3-1-3-JSON的子类"><a href="#3-1-3-JSON的子类" class="headerlink" title="3.1.3 JSON的子类"></a>3.1.3 JSON的子类</h4><pre><code>JSON的子类有JSONObject和JSONArray,JSONObject相当于Map&lt;String,Object&gt; ，JSONArray相当于List&lt;Map&lt;String,Object&gt;&gt;,子类重写了JSON类里面的方法。</code></pre><h4 id="3-1-4-自己封装的JSON工具类"><a href="#3-1-4-自己封装的JSON工具类" class="headerlink" title="3.1.4 自己封装的JSON工具类"></a>3.1.4 自己封装的JSON工具类</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">package com.cetc.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSONObject;</span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.serializer.SerializerFeature;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConvertJsonUtils</span> &#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将java对象转换为json格式的字符串</span></span><br><span class="line"><span class="comment">     * @param object  带转换的对象</span></span><br><span class="line"><span class="comment">     * @return	json格式的字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">toJsonString</span><span class="params">(Object object)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSONObject.toJSONString(object);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 默认日期</span></span><br><span class="line"><span class="comment">     * @param object</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">toJsonWithDefaultDateFormatString</span><span class="params">(Object object)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> toJsonWithDateString(object,<span class="string">"yyyy-MM-DD hh:mm:ss"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 带有日期格式的json格式字符串转换</span></span><br><span class="line"><span class="comment">     * @param object</span></span><br><span class="line"><span class="comment">     * @param format</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">toJsonWithDateString</span><span class="params">(Object object,String format)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSONObject.toJSONStringWithDateFormat(object,format, SerializerFeature.PrettyFormat);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将对象转换为json格式字符串(包括子类的,与toJsonString具体区别可以参考自定义菜单)</span></span><br><span class="line"><span class="comment">     * @param object</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">toJSONAndChildStr</span><span class="params">(Object object)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSONObject.toJSON(object).toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将json格式的数据转换为java对象(不包括数组,集合类型)</span></span><br><span class="line"><span class="comment">     * @param &lt;T&gt;</span></span><br><span class="line"><span class="comment">     * @param jsonData	json格式的字符串</span></span><br><span class="line"><span class="comment">     * @param t			待转换成的java对象</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">T <span class="title">jsonToJavaObject</span><span class="params">(String jsonData,Class&lt;T&gt; t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSONObject.parseObject(jsonData, t);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将json格式的数据转换为java集合对象 ,List集合,map集合</span></span><br><span class="line"><span class="comment">     * @param jsonData	待转换的json格式的字符串</span></span><br><span class="line"><span class="comment">     * @param t			泛型集合对象</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">List&lt;T&gt; <span class="title">jsonToJavaList</span><span class="params">(String jsonData,Class&lt;T&gt; t)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JSONObject.parseArray(jsonData, t);</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><input disabled="" type="checkbox"> 3.2 Fastjson的使用</li>
+<li><input disabled="" type="checkbox"> 3.3 Jackson的使用</li>
+<li><input disabled="" type="checkbox"> 3.4 json-lib的使用<h2 id="四、前端解析JSON"><a href="#四、前端解析JSON" class="headerlink" title="四、前端解析JSON"></a>四、前端解析JSON</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将JSON字符串转化为JSON对象</span></span><br><span class="line">	JSON.parse();</span><br><span class="line">	eval(<span class="string">"("</span>+json字符串变量+<span class="string">")"</span>)</span><br><span class="line">[注]两者的区别是前者会检验JOSN格式是否正确,后者则不会</span><br><span class="line"></span><br><span class="line"><span class="comment">//将JSON对象转化为JSON字符串</span></span><br><span class="line">	JSON.stringify(json对象)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
